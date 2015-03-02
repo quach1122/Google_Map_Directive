@@ -1,0 +1,43 @@
+<style>
+    google-map, [google-map]{
+        display: block;
+        height: 75vh;
+        width: 75vw;
+        margin: 10vh auto;
+        background-color: #aaa;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    google-map > #map{
+        height: 100%;
+        width: 100%;
+    }
+    google-map >button {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        z-index: 1000;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        border-radius: 10px;
+    }
+    google-map > #directionsPanel{
+        height: auto;
+        width: 500px;
+        background-color: rgba(101, 181, 175, 0.48);
+        overflow: auto;
+    }
+    google-map > input {
+        height: 15px;
+    }
+</style>
+<button>Show Directions</button>
+<input type="text" placeholder="From"/>
+<input type="text" placeholder="To"/>
+<div id="directionsPanel" onscroll="true">
+
+</div>
+<div id="map">
+
+</div>
